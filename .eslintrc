@@ -1,0 +1,18 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "./tsconfig.json"
+  },
+  "extends": [
+    "canonical",
+    "canonical/typescript"
+  ],
+  "ignorePatterns": ["src/generated/**/*.js"],
+  "rules": {
+    "max-len": 0,
+    "jsdoc/check-tag-names": [
+      "error", {"definedTags": ["internal"]}
+    ],
+    "filenames/match-exported": 0
+  }
+}
